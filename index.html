@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rate Your Experience</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>How was your experience?</h2>
+
+<div class="stars">
+<span onclick="rate(1)">★</span>
+<span onclick="rate(2)">★</span>
+<span onclick="rate(3)">★</span>
+<span onclick="rate(4)">★</span>
+<span onclick="rate(5)">★</span>
+</div>
+
+<form id="feedbackForm">
+<input id="mobile" placeholder="Mobile Number">
+<input id="email" placeholder="Email">
+<textarea id="feedback" placeholder="Your feedback"></textarea>
+<button onclick="submitFeedback(event)">Submit</button>
+</form>
+
+<div id="reviewBox">
+<button onclick="leaveReview()">Leave Google Review ⭐</button>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
